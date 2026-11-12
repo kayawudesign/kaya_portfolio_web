@@ -1,0 +1,31 @@
+KAYA Portfolio｜圖片替換指南
+
+1. 首頁封面
+- pages/portfolio-cover.webp：首頁大圖。
+- 封面目前使用靜態圖片，沒有套用水波紋特效。
+
+2. 首頁作品縮圖與原始作品頁
+- 圖片依作品分資料夾，位置在 pages/projects/<作品資料夾>/。
+- 每個作品的 01-cover.webp 是首頁作品列表使用的縮圖。
+- 同一資料夾內其他編號圖片，是原作品集匯出的其他作品頁，編號依序排列。
+- 作品資料夾名稱對應 projects/ 裡的 HTML 檔名，例如 projects/xin-motivation.html 對應 pages/projects/xin-motivation/。
+
+3. 作品詳情頁的暫用圖
+- 詳情頁目前使用的暫用圖在 pages/placeholders/<作品資料夾>/。
+- sample-01.webp、sample-02.webp 等依詳情頁圖片由上至下排序。
+- 可用自己的圖片覆蓋相同檔名，網頁就會顯示新圖片；若要改檔名，請同步修改對應 projects/<作品>.html 的 img src。
+
+4. 魔女的秘果（SUCCUBA SECRET FRUIT）
+- projects/succuba-secret-fruit/ 只放 01-cover.webp。詳情頁的替換樣板集中在 pages/placeholders/succuba-secret-fruit/：
+  - 02-design-concept.webp：設計概念。
+  - 03-typography-layout.webp：標準字與版面 A。
+  - 04-typography-layout-detail.webp：標準字與版面 B。
+- 02–04 目前放入替換樣板；以你的圖片覆蓋同名檔案即可，無須修改 HTML。
+
+5. 鉄人三麵（TRIATHLON NOODLES）
+- pages/placeholders/triathlon-noodles/sample-01.webp：概覽封面。sample-01 與 pages/projects/triathlon-noodles/01-cover.webp 相同。
+- sample-02.webp：設計概念開場；sample-03.webp：激辣長跑；sample-04.webp：激苦自行車；sample-05.webp：激酸游泳。
+- 可直接覆蓋同名檔案替換圖片。
+
+作品首頁縮圖資料位置：data.js 的 KAYA_PROJECTS。
+詳情頁圖片位置：projects/<作品名稱>.html。
